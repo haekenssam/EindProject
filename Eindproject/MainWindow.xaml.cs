@@ -20,9 +20,22 @@ namespace Eindproject
     /// </summary>
     public partial class MainWindow : Window
     {
+        Product product = new Product("test");
+        public static List<Product> products = new List<Product>();
+        
+
         public MainWindow()
         {
             InitializeComponent();
+            
+        }
+
+        public void addList_Click(object sender, RoutedEventArgs e)
+        {
+            product.omschrijving = omschrijvingTextBox.Text;
+            products.Add(product);
+
+            
         }
     }
 }
