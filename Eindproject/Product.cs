@@ -11,13 +11,6 @@ namespace Eindproject
         public string Omschrijving { get; set; }
         public int Stock { get; set; }
 
-        public Product (string omschrijving, int stock)
-        {
-            Omschrijving = omschrijving;
-            Stock = Stock;
-        }
-
-        public List<Product> products = new List<Product>();
 
     }
 }
