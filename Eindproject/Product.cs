@@ -8,15 +8,14 @@ namespace Eindproject
 {
     public class Product
     {
-        public string omschrijving { get; set; }
+        public string Omschrijving { get; set; }
 
-        public Product(string omschrijving)
+        public Product (string omschrijving)
         {
-            omschrijving = omschrijving;
+            Omschrijving = omschrijving;
         }
 
-       
-
+        public List<Product> products = new List<Product>();
 
     }
 }
