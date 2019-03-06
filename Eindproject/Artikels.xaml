@@ -6,7 +6,18 @@
              xmlns:local="clr-namespace:Eindproject"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800" Background="Gray">
-    <Grid Width="800" Height="450">
-            
+    <Grid x:Name="Artikels1" Width="800" Height="450">
+        <ListView x:Name="artikelLijst" HorizontalAlignment="Left" Height="353" Margin="567,43,0,0" VerticalAlignment="Top" Width="223">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <TextBox x:Name="txtOmschrijving" HorizontalAlignment="Left" Height="23" Margin="236,155,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtStock" HorizontalAlignment="Left" Height="23" Margin="236,183,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="236,211,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btnAddProduct" Content="Toevoegen" HorizontalAlignment="Left" Margin="248,257,0,0" VerticalAlignment="Top" Width="75" Click="btnAddProduct_Click"/>
+
     </Grid>
 </UserControl>

@@ -20,9 +20,24 @@ namespace Eindproject
     /// </summary>
     public partial class Artikels : UserControl
     {
+        
         public Artikels()
         {
             InitializeComponent();
+            
+        }
+
+        private void btnAddProduct_Click(object sender, RoutedEventArgs e)
+        {
+
+            string omschrijving = txtOmschrijving.Text;
+            int stock = int.Parse(txtStock.Text);
+
+            Product product = new Product(omschrijving,stock);
+
+            artikelLijst.Items.Add(omschrijving + stock);
+            
+
         }
     }
 }
