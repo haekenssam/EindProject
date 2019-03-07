@@ -24,7 +24,7 @@ namespace Eindproject
         public Artikels()
         {
             InitializeComponent();
-            
+
         }
 
         private void btnAddProduct_Click(object sender, RoutedEventArgs e)
@@ -37,6 +37,8 @@ namespace Eindproject
             product.Oorsprong = txtStock.Text;
 
             products.Add(product);
+
+            this.dgProduct.ItemsSource = products;
 
         }
     }

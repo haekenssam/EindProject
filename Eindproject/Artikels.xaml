@@ -13,14 +13,14 @@
                 <MenuItem Header="Tekst"/>
             </Menu>
         </DockPanel>
-        <TextBox x:Name="txtOmschrijving" HorizontalAlignment="Left" Height="23" Margin="236,155,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="txtStock" HorizontalAlignment="Left" Height="23" Margin="236,183,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="btnAddProduct" Content="Toevoegen" HorizontalAlignment="Left" Margin="248,257,0,0" VerticalAlignment="Top" Width="75" Click="btnAddProduct_Click"/>
-        <Label x:Name="lblOmschrijving" Content="Omschrijving:" HorizontalAlignment="Left" Margin="150,155,0,0" VerticalAlignment="Top" Width="81"/>
-        <Label x:Name="lblStock" Content="Stock:" HorizontalAlignment="Left" Margin="190,181,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="lblVervaldatum" Content="Vervaldatum:" HorizontalAlignment="Left" Margin="152,207,0,0" VerticalAlignment="Top"/>
-        <DatePicker x:Name="dtmDatum" HorizontalAlignment="Left" Margin="236,211,0,0" VerticalAlignment="Top" Width="120"/>
-        <DataGrid x:Name="dgProduct" HorizontalAlignment="Left" Height="333" Margin="431,107,0,0" VerticalAlignment="Top" Width="359">
+        <TextBox x:Name="txtOmschrijving" HorizontalAlignment="Left" Height="23" Margin="96,44,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtStock" HorizontalAlignment="Left" Height="23" Margin="96,72,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btnAddProduct" Content="Toevoegen" HorizontalAlignment="Left" Margin="108,146,0,0" VerticalAlignment="Top" Width="75" Click="btnAddProduct_Click"/>
+        <Label x:Name="lblOmschrijving" Content="Omschrijving:" HorizontalAlignment="Left" Margin="10,44,0,0" VerticalAlignment="Top" Width="81"/>
+        <Label x:Name="lblStock" Content="Stock:" HorizontalAlignment="Left" Margin="50,70,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblVervaldatum" Content="Vervaldatum:" HorizontalAlignment="Left" Margin="12,96,0,0" VerticalAlignment="Top"/>
+        <DatePicker x:Name="dtmDatum" HorizontalAlignment="Left" Margin="96,100,0,0" VerticalAlignment="Top" Width="120"/>
+        <DataGrid x:Name="dgProduct" HorizontalAlignment="Left" Height="424" Margin="221,26,0,0" VerticalAlignment="Top" Width="579">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Naam" Width="*" Binding="{Binding Omschrijving}" />
                 <DataGridTextColumn Header="Oorsprong" Width="*" Binding="{Binding Oorsprong}"/>
