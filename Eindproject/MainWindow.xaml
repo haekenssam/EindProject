@@ -5,11 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Eindproject"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Fruitmarkt" Height="450" Width="800">
     <Grid>
-        <TextBox x:Name="omschrijvingTextBox" HorizontalAlignment="Left" Height="23" Margin="239,167,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" TextChanged="omschrijvingTextBox_TextChanged"/>
-        <Button x:Name="addList" Content="Button" HorizontalAlignment="Left" Margin="239,275,0,0" VerticalAlignment="Top" Width="75" Click="addList_Click"/>
-        <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="100" Margin="409,175,0,0" VerticalAlignment="Top" Width="100"/>
-
+        <DockPanel>
+            <Menu DockPanel.Dock="Top">
+                <MenuItem Header="Menu">
+                    <MenuItem Header="Sluit"/>
+                </MenuItem>
+                <MenuItem Header="Artikels">
+                    <MenuItem Header="Toevoegen" Click="MenuItem_Click"/>
+                </MenuItem>
+            </Menu>
+        </DockPanel>
+        <Viewbox Height="400" HorizontalAlignment="Stretch" Name="Container" VerticalAlignment="Top" Margin="0,19,0,0" />
     </Grid>
 </Window>
+   
