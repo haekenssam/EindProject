@@ -10,7 +10,10 @@
         <DockPanel>
             <Menu DockPanel.Dock="Top">
                 <MenuItem Header="Menu">
-                    <MenuItem Header="Artikels" Click="MenuItem_Click"/>
+                    <MenuItem Header="Sluit"/>
+                </MenuItem>
+                <MenuItem Header="Artikels">
+                    <MenuItem Header="Toevoegen" Click="MenuItem_Click"/>
                 </MenuItem>
             </Menu>
         </DockPanel>

@@ -30,6 +30,13 @@ namespace Eindproject
         private void btnAddProduct_Click(object sender, RoutedEventArgs e)
         {
 
+            Product product = new Product();
+            List<Product> products = new List<Product>();
+
+            product.Omschrijving = txtOmschrijving.Text;
+            product.Oorsprong = txtStock.Text;
+
+            products.Add(product);
 
         }
     }
