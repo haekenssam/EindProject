@@ -10,6 +10,7 @@ namespace Eindproject
     {
         public string Omschrijving { get; set; }
         public int Stock { get; set; }
+        //public string Unit { get; set; }
 
 
     }
