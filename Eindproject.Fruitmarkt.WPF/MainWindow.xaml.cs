@@ -13,24 +13,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Eindproject
+namespace Eindproject.Fruitmarkt.WPF
 {
     /// <summary>
-    /// Interaction logic for Artikels.xaml
+    /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class Artikels : UserControl
+    public partial class MainWindow : Window
     {
-        
-        public Artikels()
+        public MainWindow()
         {
             InitializeComponent();
-            
-        }
-
-        private void btnAddProduct_Click(object sender, RoutedEventArgs e)
-        {
-
-
         }
     }
 }
